@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0e0e0e] text-zinc-300;
+  }
+}
+
+.error-glyph-margin {
+  background: #ef4444;
+  border-radius: 50%;
+  width: 8px !important;
+  height: 8px !important;
+  margin-left: 8px !important;
+  margin-top: 6px !important;
+  box-shadow: 0 0 5px rgba(239, 68, 68, 0.5);
+}
+
+.error-line-highlight {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+/* Markdown styling improvements */
+.prose pre {
+  margin: 0;
+}
+.prose code {
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+.prose pre code {
+  color: inherit;
+  background: transparent;
+  padding: 0;
+}
